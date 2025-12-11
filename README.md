@@ -1,6 +1,9 @@
 📦 StockPilot v2.0 — AI-Powered Voice-Based Inventory & Shop Management
+
 🏆 Winner — HackFest 2.0
+
 👥 Built by Team SoundSync
+
 StockPilot v2.0 is an AI-powered, voice-first inventory and shop management system designed for small shopkeepers and suppliers.
 It allows users to talk to their store — using Hindi, English, or Hinglish — to manage stock, analyze shelves, digitize items, check expiry, generate insights, and collaborate with suppliers in real time.
 
@@ -159,32 +162,26 @@ AI provides voice + visual confirmation
 _____
 🗂️ Project Structure (Simplified)
 css
-Copy code
 src/
  ├─ components/
- │   ├─ InventoryManager.tsx
- │   ├─ SupplierChat.tsx
+ │   ├─ InventoryManager.tsx        # Core inventory UI + logic
+ │   ├─ CreateInvoiceModal.tsx      # Invoice creation modal
  │   └─ Dashboard/
- │       ├─ Insights.tsx
- │       └─ StockCharts.tsx
- │
- ├─ features/
- │   ├─ ScanBill.tsx
- │   ├─ SnapItem.tsx
- │   └─ ShelfDoctor.tsx
+ │       ├─ Insights.tsx            # Dashboard insights + analytics
+ │       └─ StockCharts.tsx         # Visual charts for stock levels
  │
  ├─ pages/
- │   ├─ Home.tsx
- │   └─ AdminDashboard.tsx
+ │   ├─ Home.tsx                    # Landing page
+ │   └─ AdminDashboard.tsx          # Full dashboard for owners
  │
  ├─ utils/
- │   ├─ firebaseConfig.ts
- │   ├─ aiProcessing.ts
- │   ├─ speechHandler.ts
- │   └─ inventoryLogic.ts
+ │   ├─ firebaseConfig.ts           # Firebase setup
+ │   ├─ inventoryLogic.ts           # Inventory update and calculations
+ │   └─ speechHandler.ts            # Voice command processing
  │
  └─ assets/
-     └─ productImages/
+     └─ productImages/              # Uploaded product images
+
 
 ____
 🚀 Getting Started
