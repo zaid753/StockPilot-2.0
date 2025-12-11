@@ -1,50 +1,108 @@
-📦 StockPilot v2.0 — Voice-Enabled Inventory Management System
-🏆 1st Place Winner — HackFest 2.0
+📦 StockPilot v2.0 — AI-Powered Voice-Based Inventory & Shop Management
+🏆 Winner — HackFest 2.0
 👥 Built by Team SoundSync
-StockPilot v2.0 is an advanced voice-enabled inventory management system designed to make stock handling effortless for small shop owners. With support for Hindi + English voice commands, real-time updates, multi-user access, and a modern analytics dashboard, StockPilot delivers a seamless and intuitive experience—without requiring any technical skills or installations.
+StockPilot v2.0 is an AI-powered, voice-first inventory and shop management system designed for small shopkeepers and suppliers.
+It allows users to talk to their store — using Hindi, English, or Hinglish — to manage stock, analyze shelves, digitize items, check expiry, generate insights, and collaborate with suppliers in real time.
 
-🔍 Overview
-Small retailers often struggle with manual stock updates, complex applications, and language barriers. StockPilot v2.0 solves these challenges by enabling shopkeepers to manage inventory simply by speaking, allowing for faster, more accurate, and hands-free operations.
+Built using React + TypeScript + Firebase, StockPilot v2.0 is fully browser-based, fast, intuitive, and engineered for real-world usability.
+______
+✨ Problem Statements We Address
+Challenges Faced by Shopkeepers 
+Sound Sync_1 (Nitish Yadav)
 
-🌟 Key Features
-🎤 Voice-Driven Inventory Control
-Add, remove, and check stock using natural voice commands
+Manual register-based inventory → frequent errors
 
-Supports both English and Hindi conversational input
+No real-time visibility of low-stock or soon-expiring items
 
-📊 Smart Dashboard & Insights
-Real-time visual stock overview
+Losses due to over-stock, under-stock, and expired products
 
-Category-wise segmentation
+Digital tools are often complex and not user-friendly
 
-Fast-moving & low-stock indicators
+Time-consuming updates during busy shop hours
 
-🔄 Real-Time Multi-User Sync
-Multiple staff members can update stock simultaneously
+Challenges Faced by Suppliers
+No streamlined system to connect with shopkeepers
 
-Instant data reflection across all connected devices
+No real-time view of store requirements
 
-🧠 Enhanced NLP Voice Engine
-Improved recognition for Hinglish commands
+Hard to track orders, profit/loss, and stock
 
-Faster processing in noisy shop environments
+No central communication platform for sellers ↔ suppliers
 
-📂 Product & Catalog Management
-Add/edit items with images, categories, pricing, and SKUs
+_____
+🚀 Our Solution – StockPilot v2.0
+StockPilot is an AI Co-Pilot for shopkeepers and suppliers.
+Users can speak, scan, or record videos to manage their entire store effortlessly.
 
-Maintain purchase and sales history
+Core Highlights
+🎤 Voice-first inventory management
 
-🚨 Alerts & Notifications
-Low-stock alerts
+📸 AI-powered item & invoice digitization
 
-Automated reorder recommendations based on usage patterns
+🧹 Shelf Doctor: AI shelf-analysis from video walkthrough
 
-📱 Modern UI/UX
-Fully responsive and mobile-first design
+⏰ Automated expiry alerts
 
-Clean, intuitive interface with minimal learning curve
+📊 Daily sales analytics & insights
 
-⚙️ Tech Stack
+🔗 Real-time seller ↔ supplier connectivity
+
+✨ Key Features (Expanded)
+🎙️ Voice-First Store Management
+Add, update, or query stock using voice
+
+Hindi, English, and Hinglish supported
+
+Hands-free operation ideal for busy shop floors
+
+📸 Visual AI Tools
+Snap Item → Digitize product details using the phone camera
+
+Scan Bill → AI extracts item details from purchase invoices
+
+Shelf Doctor → AI analyses store shelves via video to detect:
+
+Empty or unutilized spaces
+
+Misplaced items
+
+Category mismatch
+
+Stock gaps
+(Using a custom AI vision + generation model)
+
+_____
+⏰ Automated Expiry Alerts
+Notifies shopkeepers before items expire
+
+Helps minimize product wastage
+
+📊 Sales Statistics & Insights
+Daily sales analysis
+
+Category-wise performance
+
+Profit/loss trends
+
+Smart recommendations
+
+🔗 Supplier Connectivity
+Real-time communication between sellers & suppliers
+
+Suppliers can view:
+
+Stock requirements
+
+Orders
+
+Profit/loss trends
+
+Enables faster replenishment & decision-making
+
+_____
+🧰 Tech Stack 
+Sound Sync_1 (Nitish Yadav)
+
 Frontend
 React
 
@@ -54,83 +112,109 @@ Vite
 
 Tailwind CSS
 
-Backend & Cloud Services
-Firebase Firestore (Realtime Database)
+Backend & Database
+Firebase Authentication
 
-Firebase Auth (Secure Authentication)
+Firebase Firestore (Real-time DB)
 
-Firebase Storage (Product Images)
+Firebase Storage (Media uploads)
 
-Agora RTM (Realtime Communication Layer)
+AI & ML Components
+Custom AI vision models (item & shelf understanding)
 
-Additional Tools
-WebRTC for voice capture
+AI invoice understanding
 
-Custom speech processing utilities
+Function-calling LLM for logic automation
 
-Modular state & inventory logic
+Real-time TTS for assistant responses
 
-🧩 How It Works
-User speaks a command (e.g., “Add 5 Pepsi”)
+low-latency audio streaming via google-native-audio-preview
 
-Voice engine interprets the command and extracts intent
+Communication Layer
+Real-time seller ↔ supplier messaging
 
-Firestore updates inventory in real time
+____
+🔄 Workflow 
+Input Options
+🎤 Voice command
 
-Dashboard immediately reflects updated stock levels
+📸 Camera scan
 
-Alerts, insights, and logs update automatically
+🎥 Shelf video walkthrough
 
-🗂️ Folder Structure
-plaintext
+Process
+AI understands user intent
+
+Validates items/categories
+
+Executes inventory logic
+
+Updates Firebase in real time
+
+Output
+UI updates instantly
+
+AI provides voice + visual confirmation
+
+_____
+🗂️ Project Structure (Simplified)
+css
 Copy code
 src/
-  components/
-    InventoryManager.tsx
-    CreateInvoiceModal.tsx
-    Dashboard/
-      Insights.tsx
-      StockCharts.tsx
-  pages/
-    Home.tsx
-    AdminDashboard.tsx
-  utils/
-    firebaseConfig.ts
-    inventoryLogic.ts
-    speechHandler.ts
-  assets/
-    productImages/
+ ├─ components/
+ │   ├─ InventoryManager.tsx
+ │   ├─ SupplierChat.tsx
+ │   └─ Dashboard/
+ │       ├─ Insights.tsx
+ │       └─ StockCharts.tsx
+ │
+ ├─ features/
+ │   ├─ ScanBill.tsx
+ │   ├─ SnapItem.tsx
+ │   └─ ShelfDoctor.tsx
+ │
+ ├─ pages/
+ │   ├─ Home.tsx
+ │   └─ AdminDashboard.tsx
+ │
+ ├─ utils/
+ │   ├─ firebaseConfig.ts
+ │   ├─ aiProcessing.ts
+ │   ├─ speechHandler.ts
+ │   └─ inventoryLogic.ts
+ │
+ └─ assets/
+     └─ productImages/
+
+____
 🚀 Getting Started
-1. Install Dependencies
+Install Dependencies
 bash
 Copy code
 npm install
-2. Run Development Server
+Run Development Server
 bash
 Copy code
 npm run dev
-3. Build for Production
+Build for Production
 bash
 Copy code
 npm run build
-4. Preview Production Build
+Preview Production Build
 bash
 Copy code
 npm run preview
-📈 Impact
-Saves time and simplifies routine stock updates
+___
 
-Removes dependency on typing and complex software
+🎯 Impact
+Reduces inventory tracking errors
 
-Reduces errors and stock mismanagement
+Prevents losses from expired or missing stock
 
-Supports non-tech-savvy users thanks to voice-first design
+Saves time using voice-based, hands-free management
 
-Helps shops operate more efficiently with real-time insights
+Simplifies store digitization for non-tech users
 
-🏆 Achievements
-Winner — HackFest 2.0 (1st Position)
+Improves supplier–seller workflows
 
-Recognized for impactful innovation, usability, and real-world relevance
-
-Demonstrates strong scalability and production-friendly design
+Bridges the gap between local retail & modern AI capabilities
