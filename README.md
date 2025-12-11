@@ -1,205 +1,136 @@
 📦 StockPilot v2.0 — Voice-Enabled Inventory Management System
-🏆 Winner — HackFest 2.0 (1st Position)
-Built by Team SoundSync
-StockPilot v2.0 is an upgraded, production-ready, voice-enabled inventory management platform designed to empower small shop owners with hands-free, real-time, and intuitive inventory control.
-It transforms inventory tracking into something as simple as speaking — no typing, no complex apps, and no technical expertise required.
+🏆 1st Place Winner — HackFest 2.0
+👥 Built by Team SoundSync
+StockPilot v2.0 is an advanced voice-enabled inventory management system designed to make stock handling effortless for small shop owners. With support for Hindi + English voice commands, real-time updates, multi-user access, and a modern analytics dashboard, StockPilot delivers a seamless and intuitive experience—without requiring any technical skills or installations.
 
-With support for English + Hindi commands, smart analytics, multi-user real-time sync, and an improved dashboard, StockPilot v2.0 redefines how local retailers manage their daily operations.
+🔍 Overview
+Small retailers often struggle with manual stock updates, complex applications, and language barriers. StockPilot v2.0 solves these challenges by enabling shopkeepers to manage inventory simply by speaking, allowing for faster, more accurate, and hands-free operations.
 
-🌟 Key Highlights
-🥇 1st Place Winner at HackFest 2.0
+🌟 Key Features
+🎤 Voice-Driven Inventory Control
+Add, remove, and check stock using natural voice commands
 
-🎙️ Voice-first inventory control
+Supports both English and Hindi conversational input
 
-🔄 Real-time multi-user sync
+📊 Smart Dashboard & Insights
+Real-time visual stock overview
 
-📊 Smart dashboard with insights & analytics
+Category-wise segmentation
 
-🧠 Natural Hindi + English command understanding
+Fast-moving & low-stock indicators
 
-⚡ Runs fully in the browser — no installation required
+🔄 Real-Time Multi-User Sync
+Multiple staff members can update stock simultaneously
 
-📱 Mobile-first responsive interface
+Instant data reflection across all connected devices
 
-⏱️ Designed for busy shopkeepers with low tech familiarity
+🧠 Enhanced NLP Voice Engine
+Improved recognition for Hinglish commands
 
-🚩 Problem Statement
-Small retailers often rely on notebooks or complicated digital tools that interrupt their workflow.
-Common challenges include:
+Faster processing in noisy shop environments
 
-Difficulty updating stock while serving customers
+📂 Product & Catalog Management
+Add/edit items with images, categories, pricing, and SKUs
 
-Language barriers & lack of digital literacy
+Maintain purchase and sales history
 
-Errors in stock entry leading to financial loss
+🚨 Alerts & Notifications
+Low-stock alerts
 
-No instant visibility on stock levels or reorder needs
+Automated reorder recommendations based on usage patterns
 
-Lack of real-time staff collaboration
+📱 Modern UI/UX
+Fully responsive and mobile-first design
 
-There is a pressing need for a simple, hands-free, and accessible solution that fits naturally into their daily routine.
+Clean, intuitive interface with minimal learning curve
 
-💡 Our Solution
-StockPilot v2.0 brings voice-based inventory management directly into the browser, enabling shopkeepers to:
-
-Add items
-“Add 10 Pepsi”
-
-Remove items
-“Remove 2 bread packets”
-
-Check availability
-“Check stock for Maggie”
-
-Get alerts
-“Low stock on items”
-
-View visual insights
-Stock charts, demand patterns, and reorder recommendations
-
-This makes the entire process fast, natural, and human-friendly, especially for non-technical users.
-
-✨ What’s New in StockPilot v2.0
-Compared to the earlier version, v2.0 introduces several major improvements:
-
-🆕 1. Smart Inventory Dashboard
-Overall stock view
-
-Category-based segmentation
-
-Low-stock indicators
-
-Visual consumption patterns
-
-🆕 2. Enhanced Voice Engine
-Better recognition of Hinglish commands
-
-Noise-tolerant voice processing
-
-Faster command execution
-
-🆕 3. Multi-User Real-Time Sync
-Owners + staff can update inventory simultaneously
-
-Instant reflection across connected devices
-
-🆕 4. Product Management Features
-Image upload for product catalog
-
-Category creation
-
-Price & SKU management
-
-🆕 5. Sales & Purchase History
-Track daily sales
-
-Maintain purchase logs
-
-Generate summaries for analysis
-
-🆕 6. Low-Stock Alerts + Auto Reorder Suggestions
-Threshold-based alerts
-
-Recommended reorder quantities
-
-🆕 7. Modern UI/UX
-Clean, responsive interface
-
-Mobile-first layout
-
-Smooth onboarding experience
-
-🧠 Tech Stack
+⚙️ Tech Stack
 Frontend
-React / TypeScript
+React
+
+TypeScript
 
 Vite
 
 Tailwind CSS
 
-Core Services
-Voice Understanding Engine (custom integration)
+Backend & Cloud Services
+Firebase Firestore (Realtime Database)
 
-Firebase Firestore — real-time database
+Firebase Auth (Secure Authentication)
 
-Firebase Auth — secure access
+Firebase Storage (Product Images)
 
-Firebase Storage — product images
+Agora RTM (Realtime Communication Layer)
 
-Agora RTM — real-time communication layer
+Additional Tools
+WebRTC for voice capture
 
-Tools & Architecture
-WebRTC-based voice capture
+Custom speech processing utilities
 
-REST API integrations
+Modular state & inventory logic
 
-Modular component structure
+🧩 How It Works
+User speaks a command (e.g., “Add 5 Pepsi”)
 
-Optimized state management
+Voice engine interprets the command and extracts intent
 
-⚙️ How StockPilot Works
-User speaks a command → e.g., “Add five Coke”
+Firestore updates inventory in real time
 
-Voice engine converts speech into structured intent
+Dashboard immediately reflects updated stock levels
 
-Inventory logic processes the command
+Alerts, insights, and logs update automatically
 
-Firestore updates the database in real time
-
-UI auto-refreshes with the latest values
-
-Dashboard & analytics update accordingly
-
-Everything happens within seconds, without typing or manual data entry.
-
-📈 Impact & Real-World Value
-StockPilot v2.0 helps small shop owners:
-
-Save time during busy hours
-
-Avoid stockouts & missed reorders
-
-Reduce human error
-
-Improve decision-making with insights
-
-Easily adopt digital inventory tools without training
-
-It bridges the gap between technology and real ground-level retail challenges.
-
-📦 Project Structure
-css
+🗂️ Folder Structure
+plaintext
 Copy code
 src/
   components/
     InventoryManager.tsx
     CreateInvoiceModal.tsx
     Dashboard/
-      StockCharts.tsx
       Insights.tsx
+      StockCharts.tsx
   pages/
     Home.tsx
     AdminDashboard.tsx
   utils/
-    speechHandler.ts
-    inventoryLogic.ts
     firebaseConfig.ts
+    inventoryLogic.ts
+    speechHandler.ts
   assets/
     productImages/
 🚀 Getting Started
-Installation
+1. Install Dependencies
 bash
 Copy code
 npm install
-Run Development Server
+2. Run Development Server
 bash
 Copy code
 npm run dev
-Build for Production
+3. Build for Production
 bash
 Copy code
 npm run build
-Preview Build
+4. Preview Production Build
 bash
 Copy code
 npm run preview
+📈 Impact
+Saves time and simplifies routine stock updates
+
+Removes dependency on typing and complex software
+
+Reduces errors and stock mismanagement
+
+Supports non-tech-savvy users thanks to voice-first design
+
+Helps shops operate more efficiently with real-time insights
+
+🏆 Achievements
+Winner — HackFest 2.0 (1st Position)
+
+Recognized for impactful innovation, usability, and real-world relevance
+
+Demonstrates strong scalability and production-friendly design
