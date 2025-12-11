@@ -159,31 +159,7 @@ UI updates instantly
 
 AI provides voice + visual confirmation
 
-_____
-🗂️ Project Structure (Simplified)
-css
-src/
- ├─ components/
- │   ├─ InventoryManager.tsx        # Core inventory UI + logic
- │   ├─ CreateInvoiceModal.tsx      # Invoice creation modal
- │   └─ Dashboard/
- │       ├─ Insights.tsx            # Dashboard insights + analytics
- │       └─ StockCharts.tsx         # Visual charts for stock levels
- │
- ├─ pages/
- │   ├─ Home.tsx                    # Landing page
- │   └─ AdminDashboard.tsx          # Full dashboard for owners
- │
- ├─ utils/
- │   ├─ firebaseConfig.ts           # Firebase setup
- │   ├─ inventoryLogic.ts           # Inventory update and calculations
- │   └─ speechHandler.ts            # Voice command processing
- │
- └─ assets/
-     └─ productImages/              # Uploaded product images
-
-
-____
+___
 🚀 Getting Started
 Install Dependencies
 bash
@@ -201,7 +177,7 @@ Preview Production Build
 bash
 Copy code
 npm run preview
-___
+______
 
 🎯 Impact
 Reduces inventory tracking errors
@@ -215,3 +191,7 @@ Simplifies store digitization for non-tech users
 Improves supplier–seller workflows
 
 Bridges the gap between local retail & modern AI capabilities
+
+___
+📄 License
+Released under the MIT License.
