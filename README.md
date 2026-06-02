@@ -1,197 +1,309 @@
-📦 StockPilot v2.0 — AI-Powered Voice-Based Inventory & Shop Management
+# 📦 StockPilot v2.0
 
-🏆 Winner — HackFest 2.0
+### AI-Powered Voice-Based Inventory & Shop Management System
 
-👥 Built by Team SoundSync
+🏆 **Winner – HackFest 2.0**  
+👥 **Built by Team SoundSync**
 
-StockPilot v2.0 is an AI-powered, voice-first inventory and shop management system designed for small shopkeepers and suppliers.
-It allows users to talk to their store — using Hindi, English, or Hinglish — to manage stock, analyze shelves, digitize items, check expiry, generate insights, and collaborate with suppliers in real time.
+StockPilot v2.0 is an AI-powered, voice-first inventory and retail management platform designed for shopkeepers and suppliers. By combining Voice AI, Computer Vision, Real-Time Analytics, and Supplier Connectivity, StockPilot transforms traditional inventory management into a smart, efficient, and user-friendly experience.
 
-Built using React + TypeScript + Firebase, StockPilot v2.0 is fully browser-based, fast, intuitive, and engineered for real-world usability.
-______
-✨ Problem Statements We Address
-Challenges Faced by Shopkeepers 
-Sound Sync_1 (Nitish Yadav)
+Users can interact with their store using **Hindi, English, or Hinglish**, making digital inventory management accessible to everyone.
 
-Manual register-based inventory → frequent errors
+---
 
-No real-time visibility of low-stock or soon-expiring items
+## 🌟 Overview
 
-Losses due to over-stock, under-stock, and expired products
+Managing inventory manually often results in stock discrepancies, expired products, inaccurate records, and inefficient communication between retailers and suppliers.
 
-Digital tools are often complex and not user-friendly
+StockPilot acts as an **AI Co-Pilot for Retail Businesses**, enabling users to manage their stores through voice commands, image scanning, invoice digitization, shelf analysis, and real-time business insights.
 
-Time-consuming updates during busy shop hours
+---
 
-Challenges Faced by Suppliers
-No streamlined system to connect with shopkeepers
+## 🎯 Problem Statement
 
-No real-time view of store requirements
+### Challenges Faced by Shopkeepers
 
-Hard to track orders, profit/loss, and stock
+- Manual inventory tracking leads to frequent errors
+- Lack of real-time stock visibility
+- Product losses due to expiry and overstocking
+- Complex digital tools with steep learning curves
+- Time-consuming inventory updates during busy business hours
 
-No central communication platform for sellers ↔ suppliers
+### Challenges Faced by Suppliers
 
-_____
-🚀 Our Solution – StockPilot v2.0
-StockPilot is an AI Co-Pilot for shopkeepers and suppliers.
-Users can speak, scan, or record videos to manage their entire store effortlessly.
+- Limited visibility into retailer requirements
+- Inefficient order management workflows
+- Difficulty tracking demand and profitability
+- Lack of centralized communication channels
 
-Core Highlights
-🎤 Voice-first inventory management
+---
 
-📸 AI-powered item & invoice digitization
+## 🚀 Our Solution
 
-🧹 Shelf Doctor: AI shelf-analysis from video walkthrough
+StockPilot provides a unified AI-powered platform where users can **Speak, Scan, or Record** to manage their entire store ecosystem.
 
-⏰ Automated expiry alerts
+### Core Highlights
 
-📊 Daily sales analytics & insights
+- 🎤 Voice-First Inventory Management
+- 📸 AI-Powered Product Digitization
+- 🧾 Smart Invoice Scanning
+- 🧹 Shelf Doctor – AI Shelf Analysis
+- ⏰ Automated Expiry Alerts
+- 📊 Sales Analytics & Business Insights
+- 🔗 Real-Time Seller ↔ Supplier Connectivity
 
-🔗 Real-time seller ↔ supplier connectivity
+---
 
-✨ Key Features (Expanded)
-🎙️ Voice-First Store Management
-Add, update, or query stock using voice
+# ✨ Key Features
 
-Hindi, English, and Hinglish supported
+## 🎙️ Voice-First Store Management
 
-Hands-free operation ideal for busy shop floors
+Manage inventory using natural language commands.
 
-📸 Visual AI Tools
-Snap Item → Digitize product details using the phone camera
+### Examples
 
-Scan Bill → AI extracts item details from purchase invoices
+- "Add 10 packets of Maggi"
+- "How many Coca-Cola bottles are left?"
+- "Show low-stock products"
 
-Shelf Doctor → AI analyses store shelves via video to detect:
+### Supported Languages
 
-Empty or unutilized spaces
+- English
+- Hindi
+- Hinglish
 
-Misplaced items
+### Benefits
 
-Category mismatch
+- Hands-free operation
+- Faster inventory updates
+- Reduced manual effort
+- Easy adoption for non-technical users
 
-Stock gaps
-(Using a custom AI vision + generation model)
+---
 
-_____
-⏰ Automated Expiry Alerts
-Notifies shopkeepers before items expire
+## 📸 AI-Powered Product Digitization
 
-Helps minimize product wastage
+Capture product images and automatically extract:
 
-📊 Sales Statistics & Insights
-Daily sales analysis
+- Product Name
+- Category
+- Quantity
+- Pricing Information
 
-Category-wise performance
+Eliminates manual data entry and accelerates inventory onboarding.
 
-Profit/loss trends
+---
 
-Smart recommendations
+## 🧾 Smart Invoice Scanner
 
-🔗 Supplier Connectivity
-Real-time communication between sellers & suppliers
+Upload or scan purchase invoices to automatically extract:
 
-Suppliers can view:
+- Product Details
+- Quantities
+- Supplier Information
+- Pricing Records
 
-Stock requirements
+Reduces paperwork and minimizes data-entry errors.
 
-Orders
+---
 
-Profit/loss trends
+## 🧹 Shelf Doctor – AI Shelf Analysis
 
-Enables faster replenishment & decision-making
+Analyze store shelves through a simple video walkthrough.
 
-_____
-🧰 Tech Stack 
-Sound Sync_1 (Nitish Yadav)
+### AI Detects
 
-Frontend
-React
+- Empty Shelf Spaces
+- Misplaced Products
+- Category Mismatches
+- Stocking Inefficiencies
+- Inventory Gaps
 
-TypeScript
+Helping retailers optimize shelf utilization and product placement.
 
-Vite
+---
 
-Tailwind CSS
+## ⏰ Automated Expiry Monitoring
 
-Backend & Database
-Firebase Authentication
+Receive intelligent alerts before products expire.
 
-Firebase Firestore (Real-time DB)
+### Benefits
 
-Firebase Storage (Media uploads)
+- Reduce Product Wastage
+- Improve Inventory Turnover
+- Minimize Financial Losses
 
-AI & ML Components
-Custom AI vision models (item & shelf understanding)
+---
 
-AI invoice understanding
+## 📊 Sales Analytics & Business Insights
 
-Function-calling LLM for logic automation
+Track business performance through:
 
-Real-time TTS for assistant responses
+- Daily Sales Reports
+- Category-Wise Performance
+- Product Trends
+- Profit & Loss Analysis
+- Inventory Recommendations
 
-low-latency audio streaming via google-native-audio-preview
+---
 
-Communication Layer
-Real-time seller ↔ supplier messaging
+## 🔗 Seller–Supplier Collaboration
 
-____
-🔄 Workflow 
-Input Options
-🎤 Voice command
+Enable seamless communication between retailers and suppliers.
 
-📸 Camera scan
+### Suppliers Can
 
-🎥 Shelf video walkthrough
+- Monitor Stock Requirements
+- Receive Order Requests
+- View Inventory Trends
+- Improve Replenishment Planning
 
-Process
-AI understands user intent
+---
 
-Validates items/categories
+# 🛠️ Tech Stack
 
-Executes inventory logic
+## Frontend
 
-Updates Firebase in real time
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
-Output
-UI updates instantly
+## Backend & Database
 
-AI provides voice + visual confirmation
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Storage
 
-___
-🚀 Getting Started
-Install Dependencies
-bash
-Copy code
+## AI & Machine Learning
+
+- Voice Command Processing
+- Computer Vision Models
+- Invoice Understanding AI
+- Shelf Analysis Engine
+- Function Calling LLM Workflows
+- Real-Time Text-to-Speech (TTS)
+
+## Communication
+
+- Real-Time Seller ↔ Supplier Interaction
+- Live Database Synchronization
+
+---
+
+# 🔄 Workflow
+
+### Input
+
+- 🎤 Voice Commands
+- 📸 Product Images
+- 🧾 Invoice Scans
+- 🎥 Shelf Walkthrough Videos
+
+### AI Processing
+
+- Intent Recognition
+- Product Classification
+- Inventory Validation
+- Shelf Analysis
+- Business Logic Execution
+
+### Output
+
+- Real-Time Inventory Updates
+- AI Voice Responses
+- Dashboard Insights
+- Supplier Notifications
+
+---
+
+# 📈 Impact
+
+StockPilot helps businesses:
+
+✅ Reduce inventory tracking errors
+
+✅ Prevent losses caused by expired products
+
+✅ Save time through voice automation
+
+✅ Digitize store operations effortlessly
+
+✅ Improve stock planning and forecasting
+
+✅ Strengthen supplier-retailer collaboration
+
+✅ Make AI accessible to non-technical users
+
+---
+
+# 🏆 Achievement
+
+**🏆 Winner – HackFest 2.0**
+
+Recognized for leveraging AI, Voice Technology, and Computer Vision to solve real-world inventory and retail management challenges.
+
+---
+
+# ⚡ Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/zaid753/StockPilot-2.0.git
+cd StockPilot-2.0
+```
+
+## Install Dependencies
+
+```bash
 npm install
-Run Development Server
-bash
-Copy code
+```
+
+## Run Development Server
+
+```bash
 npm run dev
-Build for Production
-bash
-Copy code
+```
+
+## Build for Production
+
+```bash
 npm run build
-Preview Production Build
-bash
-Copy code
+```
+
+## Preview Production Build
+
+```bash
 npm run preview
-______
+```
 
-🎯 Impact
-Reduces inventory tracking errors
+---
 
-Prevents losses from expired or missing stock
+# 🤝 Contributing
 
-Saves time using voice-based, hands-free management
+Contributions, feature suggestions, and improvements are welcome.
 
-Simplifies store digitization for non-tech users
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
 
-Improves supplier–seller workflows
+---
 
-Bridges the gap between local retail & modern AI capabilities
+# 📄 License
 
-___
-📄 License
-Released under the MIT License.
+Licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Team SoundSync
+
+- Mohammed Jaid
+- Anivesh Tyagi
+- Nitish Yadav
+- Kshitij Rastogi
+
+---
+
+### ⭐ If you found this project interesting, consider giving it a star!
