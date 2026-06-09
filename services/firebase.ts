@@ -5,7 +5,7 @@ import { initializeFirestore, doc, setDoc, getDoc, collection, query, where, get
 import { UserProfile, Transaction } from "../types";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDWBos5f3koVvfnJ5otTvHVIzD4QDGNvjU",
+  apiKey: "",
   authDomain: "studio-8371121982-c36f9.firebaseapp.com",
   projectId: "studio-8371121982-c36f9",
   storageBucket: "studio-8371121982-c36f9.firebasestorage.app",
